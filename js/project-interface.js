@@ -1,52 +1,49 @@
 var MovieFinder = require('./../js/project.js').movieFinderModule;
 
-function displayMovies(movies){
-  if (typeof movies === "string") {
+function displayUser(user){
+  if (typeof user === "string") {
     $("#data").text(movies);
   }else {
-    var movieDomElements = "";
-    for (var i = 0; i < movies.length; i++) {
-      movieDomElements += "<tr>";
-      movieDomElements += "<td>" + (i+1) + "</td>";
-      movieDomElements += "<td>" + movies[i].show_title + "</td>";
-      movieDomElements += "<td>" + movies[i].release_year + "</td>";
-      if (movies[i].runtime === "N/A") {
-        movieDomElements += "<td>Data not Available</td>";
+    var userDomElements = "";
+    for (var i = 0; i < user.length; i++) {
+      userDomElements += "<tr>";
+      userDomElements += "<td>" + (i+1) + "</td>";
+      userDomElements += "<td>" + muser[i].show_title + "</td>";
+      userDomElements += "<td>" + movies[i].release_year + "</td>";
+      if (muser[i].runtime === "N/A") {
+        userDomElements += "<td>Data not Available</td>";
       }else{
-        movieDomElements += "<td>" + movies[i].runtime + "</td>";
+        userDomElements += "<td>" + user[i].runtime + "</td>";
       }
-      if(movies[i].director === ""){
-        movieDomElements += "<td>Data not Available</td>";
+      if(user[i].director === ""){
+        userDomElements += "<td>Data not Available</td>";
       }else{
-          movieDomElements += "<td>" + movies[i].director + "</td>";
+          userDomElements += "<td>" + user[i].director + "</td>";
       }
-      movieDomElements += "<td>&nbsp;<img onerror = ' this.onerror = null; this.src = \" /img/not-found.png \" ; ' class = 'poster' src='" + movies[i].poster + "'></td>";
-      movieDomElements += "</tr>";
+      userDomElements += "<td>&nbsp;<img onerror = ' this.onerror = null; this.src = \" /img/not-found.png \" ; ' class = 'poster' src='" + movies[i].poster + "'></td>";
+      userDomElements += "</tr>";
     }
     $("#data").append("<table class='table'>" +
                         "<thead>"+
                           "<tr>"+
                           "<th>#</th>"+
-                            "<th>Movie Title</th>" +
-                            "<th>Release Year</th>" +
-                            "<th>Movie Runtime</th>" +
-                            "<th>Director</th>" +
-                            "<th>Poster</th>" +
+                            "<th>Username</th>" +
+                            "<th>Number of Repos</th>" +
+                            "<th>Github Link</th>" +
                           "</tr>" +
                           "</thead>"+
-                          movieDomElements +
+                          userDomElements +
                           "</tbody></table>"
                       );
   }
 }
 
 $(document).ready(function() {
-  $("#getMovies").submit(function(event){
+  $("#getUserInfo").submit(function(event){
     event.preventDefault();
     $('#data').text("");
-    var first = $("#actorFirst").val();
-    var last = $("#actorLast").val();
-    var movieFinder = new MovieFinder(first, last);
-    movieFinder.getMovies(displayMovies);
+    var userInfo = $("#userName").val();
+    var userFinder = new UserFinder(userInfo);
+    userFinder.getRepos(displayUser);
   });
 });

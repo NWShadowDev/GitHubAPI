@@ -1,33 +1,35 @@
+$githubBlue : #556F8A;
 
 ul {
   list-style-type: none;
 }
 
 body {
-  // background-image: url(https://hd.unsplash.com/photo-1458053688450-eef5d21d43b3);
+  background-image: url(https://x265.github.io/ism/image/slides/Wallpaper_10.jpg);
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
 }
 
 label {
-  color:white;
+  color:black;
   font-size: 30px;
 }
 
 #data-well {
-  color:$white;
+  color:black;
+  opacity: 0.5;
+  margin:auto;
 }
 
-#title-well {
+#title-well{
+  width: 1140px;
+  height: 196px;
+  background-image: url(http://i63.tinypic.com/344fsz4.png);
   margin-top: 20px;
-  text-align: center;
-  h1 {
-    font-size: 65px;
-    text-shadow: 1px 1px white;
-  }
-  h3 {
-    font-size: 30px;
-  }
+  opacity:0.5;
+}
+
+.well {
+  background-color: $githubBlue;
 }

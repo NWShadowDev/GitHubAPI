@@ -1,4 +1,4 @@
-MovieFinder = function(first, last){
+UserFinder = function(first, last){
   this.first = first;
   this.last = last;
 }
@@ -11,21 +11,16 @@ function compare(a,b) {
   return 0;
 }
 
-MovieFinder.prototype.getMovies = function(displayMovies){
-  $.get('http://netflixroulette.net/api/api.php?actor=' + this.first + '%20' + this.last).then(function(response){
-    displayMovies(response.sort(compare));
-  }).fail(function(error) {
-    displayMovies(error.responseJSON.message);
-  });
-}
+UserFinder.prototype.getUserInfo = function(displayUser){
+  exports.getRepos = function(){
+    $.get('https://api.github.com/users/daneden?access_token=' + ' 9d77a6affb3c817e524b4992f5b37e439f328a88').then(function(response){
+      console.log(response);
+    }).fail(function(error){
+      console.log(error.responseJSON.message);
+    });
+  };
 
-exports.movieFinderModule = MovieFinder;
+
+exports.userFinderModule = UserFinder;
 
 //this is the code to make the API call from github
-exports.getRepos = function(){
-  $.get('https://api.github.com/users/daneden?access_token=' + apiKey).then(function(response){
-    console.log(response);
-  }).fail(function(error){
-    console.log(error.responseJSON.message);
-  });
-};
