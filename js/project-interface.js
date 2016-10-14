@@ -6,7 +6,7 @@ function displayRepos(repos){
           repoList += "<td>" + (i+1) + "</td>";
           repoList += "<td>" + repos[i].name + "</td>";
           repoList += "<td>" + repos[i].language + "</td>";
-          repoList += "<td>" + repos[i].html_url + "</td>";
+          repoList += "<td><a>" + repos[i].html_url + "</a></td>";
           repoList += "<td>" + repos[i].description + "</td>";
   }
   $("#data").append("<table class='table'>" +

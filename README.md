@@ -1,5 +1,5 @@
 # _GitHub User and Repo Database!_
-<!-- ![banner](https://github.com/NWShadowDev/MovieActor/blob/master/img/banner.png) -->
+![banner](https://github.com/NWShadowDev/GitHubAPI/blob/master/img/banner.png)
 
 #### _GitHub User Database, October 14th, 2016_
 
@@ -20,7 +20,7 @@ _This is a web application that you can look up Git Hub User profiles and reposi
 
 ## Known Bugs
 
-_No known bugs at this time!_
+_Repository URL links in data table do not work_
 
 ## Support and contact details
 
