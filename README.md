@@ -1,5 +1,5 @@
 # _GitHub User and Repo Database!_
-<!-- ![banner](https://github.com/NWShadowDev/MovieActor/blob/master/img/banner.png) -->
+[banner](https://github.com/NWShadowDev/MovieActor/blob/master/img/banner.png)
 
 #### _GitHub User Database, October 14th, 2016_
 
