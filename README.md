@@ -1,28 +1,29 @@
-# _Movie by Actor Finder!_
-![banner](https://github.com/NWShadowDev/MovieActor/blob/master/img/banner.png)
+# _GitHub User and Repo Database!_
+<!-- ![banner](https://github.com/NWShadowDev/MovieActor/blob/master/img/banner.png) -->
 
-#### _Netflix Database API Movie Finder, October 13th, 2016_
+#### _GitHub User Database, October 14th, 2016_
 
-#### By _**Amber Farrington and Yusuf Qedan**_
+#### By _**Amber Farrington**_
 
 ## Description
 
-_This is a web application that you can find movies by searching for the actor via the Netflix database! (Note: some movies do NOT come with a viewable poster!)_
+_This is a web application that you can look up Git Hub User profiles and repositories._
 
 ## Setup/Installation Requirements
 
 * _Have Git/Git Bash(Depends on the OS) installed_
 * _Clone the Repo into your terminal_
-* _Build & Serve!_
+* _Make sure you have NPM & Bower installed!_
+* _Build and Serve!
 
 
 ## Known Bugs
 
-_Limited Database_
+_No known bugs at this time!_
 
 ## Support and contact details
 
-_Contact the developers with bugs or suggestions: Amber Farrington(amberf0712@outlook.com), Yusuf Qedan (yusuf9191@gmail.com)_
+_Contact the developers with bugs or suggestions: Amber Farrington(amberf0712@outlook.com)_
 
 ## Technologies Used
 
@@ -35,8 +36,6 @@ _Gulp_
 
 ### License
 
-*Credit to the Original Database site https://market.mashape.com/community/netflix-roulette *
+*Currently under the Creative Commons License and the MIT License*
 
-*Currently under the Creative Commons License since I can't think of anything else!*
-
-Copyright (c) 2016 **_Amber Farrington and Yusuf Qedan_**
+Copyright (c) 2016 **_Amber Farrington_**
