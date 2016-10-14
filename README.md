@@ -13,8 +13,9 @@ _This is a web application that you can look up Git Hub User profiles and reposi
 
 * _Have Git/Git Bash(Depends on the OS) installed_
 * _Clone the Repo into your terminal_
+* _Install Orbitron.ttf font files in repo after clone_
 * _Make sure you have NPM & Bower installed!_
-* _Build and Serve!
+* _Build and Serve!_
 
 
 ## Known Bugs
@@ -24,6 +25,9 @@ _No known bugs at this time!_
 ## Support and contact details
 
 _Contact the developers with bugs or suggestions: Amber Farrington(amberf0712@outlook.com)_
+
+_API Documentation: https://developer.github.com/v3/_
+_API Support: https://github.com/contact_
 
 ## Technologies Used
 
