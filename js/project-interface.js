@@ -1,8 +1,7 @@
 var GithubLookup = require('./../js/project.js').githubLookupModule;
 function displayRepos(repos){
-  console.log(repos);
   var repoList = ""; //repo list empty array
-  for (var i = 0; i < repos.length; i++) { // start at index 0 and check length of user info and append into empty <ul>
+  for (var i = 0; i < repos.length; i++) { // start at index 0 and check length of user info and append into empty <table>
     repoList += "<tr>";
           repoList += "<td>" + (i+1) + "</td>";
           repoList += "<td>" + repos[i].name + "</td>";
@@ -28,11 +27,14 @@ function displayRepos(repos){
 $(document).ready(function() {
   $("#getUserInfo").submit(function(event){ //form submit to look up user/repo info
     event.preventDefault();
+
+    $("#clear").click(function () { // clear button click function to empty the search
+      $("table").empty();
+      location.reload(); //reload to empty form
+    });
+
     var username = $("#userName").val();
     var githublookup = new GithubLookup();
     githublookup.getRepos(username, displayRepos);
   });
-  // $("#clear").click(function() {
-  //     document.getElementById("#getUserInfo").reset();
-  // }
 });
