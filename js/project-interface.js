@@ -7,6 +7,7 @@ function displayRepos(repos){
     repoList += "<li>Description: " + repos[i].description + "</li>";
   }
   $("#data").append("<ul>"+ repoList + "</ul>");
+
 }
 $(document).ready(function() {
   $("#getUserInfo").submit(function(event){ //form submit to look up user/repo info
