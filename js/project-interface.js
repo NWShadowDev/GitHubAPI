@@ -9,6 +9,7 @@ function displayRepos(repos){
   $("#data").append("<ul>"+ repoList + "</ul>");
 
 }
+
 $(document).ready(function() {
   $("#getUserInfo").submit(function(event){ //form submit to look up user/repo info
     event.preventDefault();
@@ -16,4 +17,7 @@ $(document).ready(function() {
     var githublookup = new GithubLookup();
     githublookup.getRepos(username, displayRepos);
   });
+  // $("#clear").click(function() {
+  //     document.getElementById("#getUserInfo").reset();
+  // }
 });
