@@ -18,7 +18,7 @@ _This is a web application that you can look up Git Hub User profiles and reposi
 * _Install Orbitron.ttf font files in repo after clone_
 * _Make sure you have NPM & Bower installed!_
 * _Go to your GitHub Account Settings and generate a token.
-* _make a .env file in ATOM that has the following: exports.apiKey = "your token goes here";
+* _Make a .env file in ATOM that has the following: exports.apiKey = "your token goes here";
 * _Build and Serve!_
 
 
