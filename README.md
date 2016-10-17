@@ -31,6 +31,7 @@ _Repository URL links in data table do not work_
 _Contact the developers with bugs or suggestions: Amber Farrington(amberf0712@outlook.com)_
 
 _API Documentation: https://developer.github.com/v3/_
+
 _API Support: https://github.com/contact_
 
 ## Technologies Used
