@@ -3,21 +3,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-  <link rel="stylesheet" href="build/css/vendor.css">
-  <link rel="stylesheet" href="build/css/styles.css">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"> <!-- manage viewport -->
+  <link rel="stylesheet" href="build/css/vendor.css"> <!-- built app css -->
+  <link rel="stylesheet" href="build/css/styles.css"> <!-- custom css thats needed because it wont use vendor -->
   <script src="build/js/vendor.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" src="build/js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- AJAX library for jQuery -->
+  <script type="text/javascript" src="build/js/app.js"></script> <!-- app root reference goes here -->
   <title>GitHub Look-Up!</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container"> <!-- Contain Form -->
     <div class="well" id="title-well">
+      <!-- Contain Banner -->
     </div>
-    <h3>Copyright 2016 Amber Farrington</h3>
-    <h3>You can email me here: <a href="mailto:amberf0712@outlook.com?Subject=Git%20Hub%20API" target="_top">Send Mail</a></h3>
-    <h4><a href="https://github.com/NWShadowDev">Click Here for more Projects!</a></h4>
+    <h3>Copyright 2016 Amber Farrington</h3> <!-- Licensing Copyright -->
+    <h3>You can email me here: <a href="mailto:amberf0712@outlook.com?Subject=Git%20Hub%20API" target="_top">Send Mail</a></h3> <!-- MailTo Link for support services -->
+    <h4><a href="https://github.com/NWShadowDev">Click Here for more Projects!</a></h4> <!-- GitHub Profile link -->
     <img id="github" src="/img/footer.png" alt="github logo" />
     <div class="well">
       <form id="getUserInfo">
@@ -25,8 +26,8 @@
         <div class ="form-group">
           <input id="userName" class="form-control" placeholder="Username" type="text">
         </div>
-        <button class="btn" type= "submit" name="button">Search the Database</button>
-        <button id="clear" class="btn" type= "button" name="clear">Clear Search</button>
+        <button class="btn" type= "submit" name="button">Search the Database</button> <!-- Submit form to display table info via username lookup -->
+        <button id="clear" class="btn" type= "button" name="clear">Clear Search</button> <!-- Clear table and refresh page -->
       </div>
     </form>
   </div>

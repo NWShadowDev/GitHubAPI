@@ -1,6 +1,6 @@
-var GithubLookup = require('./../js/project.js').githubLookupModule;
+var GithubLookup = require('./../js/project.js').githubLookupModule; //this app must have the backend .js file to work
 function displayRepos(repos){
-  var repoList = ""; //repo list empty array
+  var repoList = ""; //repo list empty string array
   for (var i = 0; i < repos.length; i++) { // start at index 0 and check length of user info and append into empty <table>
     repoList += "<tr>";
           repoList += "<td>" + (i+1) + "</td>";
@@ -9,7 +9,7 @@ function displayRepos(repos){
           repoList += "<td><a>" + repos[i].html_url + "</a></td>";
           repoList += "<td>" + repos[i].description + "</td>";
   }
-  $("#data").append("<table class='table'>" +
+  $("#data").append("<table class='table'>" + //data is appending with headers for the table
                          "<thead>"+
                            "<tr>"+
                            "<th>#</th>"+
@@ -33,8 +33,8 @@ $(document).ready(function() {
       location.reload(); //reload to empty form
     });
 
-    var username = $("#userName").val();
-    var githublookup = new GithubLookup();
-    githublookup.getRepos(username, displayRepos);
+    var username = $("#userName").val(); //give the variable "username" the value of the div ID #userName
+    var githublookup = new GithubLookup(); //Use the object of GithubLookup for looking up a new user via variable
+    githublookup.getRepos(username, displayRepos); //display the repos via username lookup
   });
 });
