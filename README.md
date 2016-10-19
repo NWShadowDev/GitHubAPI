@@ -49,4 +49,6 @@ _Gulp_
 
 *Currently under the Creative Commons License and the MIT License*
 
+Published Live : https//nwshadowdev.github.io/GitHubAPI
+
 Copyright (c) 2016 **_Amber Farrington_**
