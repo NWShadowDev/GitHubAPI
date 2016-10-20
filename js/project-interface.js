@@ -27,10 +27,10 @@ function displayRepos(repos){
 $(document).ready(function() {
   $("#getUserInfo").submit(function(event){ //form submit to look up user/repo info
     event.preventDefault();
+    $('#submit').attr('disabled',true); // after you hit the submit button, disable until you hit "clear"
 
     $("#clear").click(function () { // clear button click function to empty the search
       $("table").empty();
-      location.reload(); //reload to empty form
     });
 
     var username = $("#userName").val(); //give the variable "username" the value of the div ID #userName
