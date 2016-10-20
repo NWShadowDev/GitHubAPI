@@ -31,6 +31,8 @@ $(document).ready(function() {
 
     $("#clear").click(function () { // clear button click function to empty the search
       $("table").empty();
+      $('#submit').attr('disabled',false);
+      $("#userName").val("");
     });
 
     var username = $("#userName").val(); //give the variable "username" the value of the div ID #userName
